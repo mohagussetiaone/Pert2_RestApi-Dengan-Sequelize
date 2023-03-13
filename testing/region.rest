@@ -1,0 +1,27 @@
+### Get regions
+GET http://localhost:3000/regions
+
+### Get regions by Query
+GET http://localhost:3000/regions/query/2
+
+### Get regions By Id
+GET http://localhost:3000/regions/5
+
+### Add regions
+POST http://localhost:3000/regions
+Content-Type: application/json
+
+{
+    "region_name" : "Indonesia"
+}
+
+### Update regions
+PUT http://localhost:3000/regions/5
+Content-Type: application/json
+
+{
+    "region_name" : "indonesia Raya"
+}
+
+### Delete regions
+DELETE http://localhost:3000/regions/5
