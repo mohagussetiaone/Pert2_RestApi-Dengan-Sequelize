@@ -5,6 +5,7 @@ import employeeController from "./employees.js";
 import jobHistoryController from "./jobHistory.js";
 import jobsController from "./jobs.js";
 import locationController from "./location.js";
+import userController from "./user.js";
 
 export default {
   regionController,
@@ -14,4 +15,5 @@ export default {
   jobHistoryController,
   jobsController,
   locationController,
+  userController,
 };

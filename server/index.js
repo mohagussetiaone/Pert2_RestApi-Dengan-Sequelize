@@ -28,6 +28,7 @@ app.use("/employees", routes.employeeRoute);
 app.use("/jobhistory", routes.jobHistoryRoute);
 app.use("/jobs", routes.jobsRoute);
 app.use("/locations", routes.locationRoute);
+app.use("/auth", routes.userRoute);
 
 const dropDatabaseSync = false;
 

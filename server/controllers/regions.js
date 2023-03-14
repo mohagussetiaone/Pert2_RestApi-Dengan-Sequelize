@@ -33,6 +33,18 @@ const addRegion = async (req, res) => {
   }
 };
 
+const createImage = async (req, res) => {
+  try {
+    const region = await req.context.models.regions.create({
+      region_name: req.body.region_name,
+      region_photo: req.file.originalname,
+    });
+    return res.send(region);
+  } catch (error) {
+    return res.status(400).send(error);
+  }
+};
+
 const updateRegion = async (req, res) => {
   try {
     const { region_name } = req.body;
@@ -72,6 +84,7 @@ export default {
   getRegions,
   getRegionById,
   addRegion,
+  createImage,
   updateRegion,
   deleteRegion,
   getAllRegionQuery,
